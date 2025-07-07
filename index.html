@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Search</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <!-- Navigation bar -->
+  <header class="main-header">
+  <div class="logo">
+    <h1 id="title">Recipe Explorer</h1>
+  </div>
+
+  <div class="search-form">
+    <form id="recipe-form">
+      <input type="text" id="search-input" placeholder="Enter ingredients or keywords" required />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#home-section" id="home-link">Home</a>
+    <a href="#about-section" id="about-link">About</a>
+    <a href="#contact-section" class="btn-contact">Contact Us</a>
+    <a href="#login-section" id="login-link">
+  <i class="fas fa-sign-in-alt"></i> Login
+  
+</a>
+  </nav>
+</header>
+
+
+  <!-- Recipe Search Section -->
+  <section id="home-section">
+    <div id="results"></div>
+  </section>
+
+  <!-- About Section (placed at bottom of page, not nested) -->
+  <section id="about-section">
+  <h2>About This Page</h2>
+  <p>This web app allows you to search for delicious recipes using the Spoonacular API. Simply enter keywords or ingredients and explore a variety of recipes instantly.</p>
+
+  <h3>💡 Features</h3>
+  <ul>
+    <li>🔍 Real-time recipe search</li>
+    <li>🧾 Displays titles, images, and direct links to full recipes</li>
+    <li>📱 Responsive design for mobile & desktop</li>
+    <li>🔐 Login modal for user access (UI only)</li>
+  </ul>
+
+  <h3>🛠️ Technologies Used</h3>
+  <ul>
+    <li>HTML5, CSS3, JavaScript</li>
+    <li>Spoonacular API for recipe search</li>
+    <li>Font Awesome for icons</li>
+  </ul>
+
+  <h3>📌 Future Improvements</h3>
+  <ul>
+    <li>User authentication & profiles</li>
+    <li>Save favorite recipes</li>
+    <li>Filter by diet, time, and ingredients</li>
+  </ul>
+
+  <p>Project by <strong>Uday Singh</strong> | © 2025 Recipe Explorer</p>
+</section>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Welcome back</h2>
+    <button class="google-btn">
+      <i class="fab fa-google"></i> Continue with Google
+    </button>
+    <p>or</p>
+    <input type="text" placeholder="Enter email or username" />
+    <button class="continue-btn">Continue</button>
+    <p class="terms">
+      By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+    </p>
+    <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+</div>
+<script src="External.js" defer></script>
+<footer id="footer">
+  <section id="contact-section">
+    <h2>This is Contact US Page</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reiciendis exercitationem
+      praesentium commodi dolore consequatur voluptas obcaecati, quo incidunt aliquam natus unde
+      odit corporis dolor maiores omnis nam ducimus ab!
+    </p>
+
+    <div class="contact-flex-container">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="text" id="Email" required />
+        </div>
+        <div class="form-group">
+          <label for="Subject">Subject</label>
+          <input type="text" id="Subject" required />
+        </div>
+        <div class="form-group">
+          <label for="Message">Message</label>
+          <textarea type="text" id="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map-container">
+      <h3>Our Location</h3>
+      <p>Patna, Bihar</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.66091370795!2d84.59396395558359!3d26.04464855392552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992e98a41a2d7c3%3A0x7e7a6dae1f94cce8!2sPanchmandir%2C%20Senduar!5e0!3m2!1sen!2sin!4v1749404442105!5m2!1sen!2sin"
+        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
+  <div class="container">
+    <p>This is a simple website created by Uday</p>
+  </div>
+</footer>
+
+</body>
+</html>
